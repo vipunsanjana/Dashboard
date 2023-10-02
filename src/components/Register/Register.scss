@@ -1,0 +1,119 @@
+$secondary-color:#263430;
+
+.main-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 60px;
+
+    .left-side{
+        flex: 0.33;
+        background: $secondary-color;
+        .header{
+            height: 15rem;
+            margin-top: 2rem;
+            #logo-img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .body{
+            height: 10rem;
+            margin-top: 2rem;
+            background: white;
+            #reg-img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        p{
+            color: white;
+            padding: 1.8rem 0.8rem;
+            text-align: left;
+            font-size: smaller;
+        }
+    }
+    .right-side{
+        flex: 0.67;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .right-top{
+            float: right;
+            margin-right: 5rem;
+            font-size: small;
+            font-weight: 400;
+            #links-signin{
+                text-decoration: none;
+                cursor: pointer;
+                color: gray;
+                font-style: 600;
+                margin-left: 0.3rem;
+                &:hover{
+                    color: aqua;
+                }
+            }
+        }
+        .body-right{
+            height: 100%;
+            width: 100%;
+            .container{
+                height: 80%;
+                width: 60%;
+                padding-top: 1rem;
+                margin: 2rem auto;
+                box-shadow: 0rem 0rem 2rem 0.1rem #48ea98;
+                border-radius: 0.5rem;
+                -webkit-border-radius: 0.5rem;
+                -moz-border-radius: 0.5rem;
+                -ms-border-radius: 0.5rem;
+                -o-border-radius: 0.5rem;
+                .input-group{
+                    width: 100%;
+                    position: relative;
+                    h5{
+                        font-size: small;
+                        font-weight: 300;
+                        color: gray;
+                        position: absolute;
+                        left: 20%;
+                        top: 0.2rem;
+                        margin: 0.5rem auto;
+                        background: white;
+                    }
+                    input{
+                        margin: 1.8rem auto;
+                        width: 70%;
+                        height: 30px;
+                        border: none;
+                        padding-left: 0.5rem 0.5rem;
+                        box-shadow: 0.1rem 0.1rem 0.3rem 0.1em gray;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+
+                }
+            }
+            #sbtn{
+                width: 70%;
+                margin-left: 95px;
+                background: $secondary-color;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 1rem 2rem;
+                transition: all 3s ease-in-out;
+                -webkit-transition: all 3s ease-in-out;
+                -moz-transition: all 3s ease-in-out;
+                -ms-transition: all 3s ease-in-out;
+                -o-transition: all 3s ease-in-out;
+                &:hover{
+                    box-shadow: 0.5rem 0.5rem 1rem 0.1rem rgb(164, 33, 33);
+                }
+            }
+        }
+    }
+}
